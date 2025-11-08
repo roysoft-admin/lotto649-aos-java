@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/transparent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="76dp"
+            android:src="@drawable/frame_card"
+            android:scaleType="fitXY"
+            android:layout_marginTop="-8dp"
+            android:layout_marginLeft="-8dp"
+            android:layout_marginRight="32dp"
+            android:layout_marginBottom="-8dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:layout_marginRight="40dp"
+            android:padding="15dp">
+
+            <EditText
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:textSize="15dp"
+                android:textColor="@color/white"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:inputType="number"
+                android:background="@drawable/back_round_15_sub_color"
+                android:id="@+id/edit_number_1"/>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+
+            <EditText
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:textSize="15dp"
+                android:textColor="@color/white"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:inputType="number"
+                android:background="@drawable/back_round_15_sub_color"
+                android:id="@+id/edit_number_2"/>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+
+            <EditText
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:textSize="15dp"
+                android:textColor="@color/white"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:inputType="number"
+                android:background="@drawable/back_round_15_sub_color"
+                android:id="@+id/edit_number_3"/>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+
+            <EditText
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:textSize="15dp"
+                android:textColor="@color/white"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:inputType="number"
+                android:background="@drawable/back_round_15_sub_color"
+                android:id="@+id/edit_number_4"/>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+
+            <EditText
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:textSize="15dp"
+                android:textColor="@color/white"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:inputType="number"
+                android:background="@drawable/back_round_15_sub_color"
+                android:id="@+id/edit_number_5"/>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+
+            <EditText
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:textSize="15dp"
+                android:textColor="@color/white"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:inputType="number"
+                android:background="@drawable/back_round_15_sub_color"
+                android:id="@+id/edit_number_6"/>
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="right|center_vertical"
+            android:src="@drawable/icon_minus_circle_red"
+            android:id="@+id/btn_delete" />
+
+    </FrameLayout>
+
+</FrameLayout>
