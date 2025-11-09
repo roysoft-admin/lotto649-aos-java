@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@color/main_color" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="30dp">
+
+        <kr.co.roysoft.lotto649.view.text.LargeTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:text="@string/app_name"
+            android:textColor="@color/main_color" />
+
+        <kr.co.roysoft.lotto649.view.text.MediumTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="72dp"
+            android:layout_marginLeft="20dp"
+            android:text="To boost your chances of winning" />
+
+        <kr.co.roysoft.lotto649.view.text.RegularTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="212dp"
+            android:text="Without Sign-In" />
+
+        <kr.co.roysoft.lotto649.view.button.LargeButton
+            android:layout_width="250dp"
+            android:layout_height="56dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="252dp"
+            android:text="START"
+            android:id="@+id/btn_guest" />
+
+        <kr.co.roysoft.lotto649.view.text.RegularTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="412dp"
+            android:visibility="gone"
+            android:text="With Social Login" />
+
+        <LinearLayout
+            android:layout_width="250dp"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:visibility="gone"
+            android:layout_marginTop="452dp">
+
+            <kr.co.roysoft.lotto649.view.button.IconButton
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/btn_google"
+                android:scaleType="fitCenter"
+                android:src="@drawable/google_logo" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                android:visibility="gone"/>
+
+            <kr.co.roysoft.lotto649.view.button.IconButton
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/btn_apple"
+                android:visibility="gone" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                android:visibility="gone" />
+
+            <kr.co.roysoft.lotto649.view.button.IconButton
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/btn_naver"
+                android:visibility="gone" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1"
+                android:visibility="gone" />
+
+            <kr.co.roysoft.lotto649.view.button.IconButton
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/btn_kakao"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</FrameLayout>

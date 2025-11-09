@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">AI LOTTO 649</string>
+
+    <string name="default_web_client_id">543602559495-8tda5i0jc46ero5fjeqbaqef7hh8egir.apps.googleusercontent.com</string>
+
+    <string name="ad_unit_test_banner">ca-app-pub-3940256099942544/9214589741</string>
+    <string name="ad_unit_test_reward">ca-app-pub-3940256099942544/5224354917</string>
+
+    <string name="ad_app_id">ca-app-pub-4532129088948102~2701085490</string>
+
+    <string name="ad_unit_main_banner">ca-app-pub-4532129088948102/7986035919</string>
+    <string name="ad_unit_input_banner">ca-app-pub-4532129088948102/9469797534</string>
+    <string name="ad_unit_my_number_banner">ca-app-pub-4532129088948102/4712294876</string>
+    <string name="ad_unit_lotto_banner">ca-app-pub-4532129088948102/1586889344</string>
+    <string name="ad_unit_ai_reward">ca-app-pub-4532129088948102/5359872576</string>
+    <string name="ad_unit_barcode_reward">ca-app-pub-4532129088948102/6843634199</string>
+
+</resources>

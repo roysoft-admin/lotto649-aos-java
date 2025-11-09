@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:id="@+id/view_root">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@color/main_color" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="30dp">
+
+        <kr.co.roysoft.lotto649.view.text.LargeTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:text="MY PAGE" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="72dp"
+            android:layout_marginRight="20dp">
+
+            <kr.co.roysoft.lotto649.view.text.MediumTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/text_user_name"
+                android:visibility="gone"
+                />
+            <kr.co.roysoft.lotto649.view.text.MediumTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=", "
+                android:visibility="gone"
+                android:id="@+id/text_user_name_suffix"
+                />
+
+            <kr.co.roysoft.lotto649.view.text.MediumTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/text_welcome"
+                />
+
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="102dp"
+            android:layout_marginBottom="64dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:id="@+id/btn_name_change">
+
+                    <kr.co.roysoft.lotto649.view.text.MediumTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Change Name"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="20dp" />
+
+                    <kr.co.roysoft.lotto649.view.text.MediumTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical|right"
+                        android:layout_marginRight="20dp"
+                        android:text=">"
+                        android:fontFamily="sans-serif-black" />
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:visibility="gone">
+
+                    <kr.co.roysoft.lotto649.view.text.MediumTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Social Login"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="20dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center_vertical|right"
+                        android:gravity="center"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginLeft="100dp">
+
+                        <kr.co.roysoft.lotto649.view.button.IconButton
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:id="@+id/btn_google"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/google_logo"/>
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="1dp"
+                            android:layout_weight="1"
+                            android:visibility="gone"/>
+
+                        <kr.co.roysoft.lotto649.view.button.IconButton
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:id="@+id/btn_apple"
+                            android:visibility="gone" />
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="1dp"
+                            android:layout_weight="1"
+                            android:visibility="gone" />
+
+                        <kr.co.roysoft.lotto649.view.button.IconButton
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:id="@+id/btn_naver"
+                            android:visibility="gone" />
+
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="1dp"
+                            android:layout_weight="1"
+                            android:visibility="gone" />
+
+                        <kr.co.roysoft.lotto649.view.button.IconButton
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:id="@+id/btn_kakao"
+                            android:visibility="gone" />
+
+                    </LinearLayout>
+
+                </FrameLayout>
+
+    <!--            <FrameLayout-->
+    <!--                android:layout_width="match_parent"-->
+    <!--                android:layout_height="60dp"-->
+    <!--                android:id="@+id/btn_qna">-->
+
+    <!--                <kr.co.roysoft.lotto649.view.text.MediumTextView-->
+    <!--                    android:layout_width="wrap_content"-->
+    <!--                    android:layout_height="wrap_content"-->
+    <!--                    android:text="문의 하기"-->
+    <!--                    android:layout_gravity="center_vertical"-->
+    <!--                    android:layout_marginLeft="20dp" />-->
+
+    <!--                <kr.co.roysoft.lotto649.view.text.MediumTextView-->
+    <!--                    android:layout_width="wrap_content"-->
+    <!--                    android:layout_height="wrap_content"-->
+    <!--                    android:layout_gravity="center_vertical|right"-->
+    <!--                    android:layout_marginRight="20dp"-->
+    <!--                    android:text=">"-->
+    <!--                    android:fontFamily="sans-serif-black" />-->
+
+    <!--            </FrameLayout>-->
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:id="@+id/btn_logout">
+
+                    <kr.co.roysoft.lotto649.view.text.MediumTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sign-Out"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="20dp" />
+
+                </FrameLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </FrameLayout>
+
+</FrameLayout>

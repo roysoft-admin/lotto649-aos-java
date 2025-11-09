@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "1011816321357",
+    "project_id": "lotto649-afdc5",
+    "storage_bucket": "lotto649-afdc5.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1011816321357:android:84fbe2715fbefc5d0fa704",
+        "android_client_info": {
+          "package_name": "kr.co.roysoft.lotto649"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBHWjQb8-vJ4jjKr151iQN5-xi6WA4S8dQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

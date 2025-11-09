@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:id="@+id/view_root">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@color/main_color" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="30dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center_vertical">
+
+            <kr.co.roysoft.lotto649.view.text.LargeTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="MY NUMBERS" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="65dp"
+            android:layout_marginRight="20dp"
+            android:gravity="center_vertical">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_weight="1" />
+
+            <androidx.constraintlayout.utils.widget.ImageFilterView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/icon_calendar" />
+
+            <kr.co.roysoft.lotto649.view.button.TextButton
+                android:layout_width="60dp"
+                android:layout_height="32dp"
+                android:text="mm-dd"
+                android:id="@+id/btn_start_date" />
+
+            <kr.co.roysoft.lotto649.view.text.MediumTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text=" ~ " />
+
+            <kr.co.roysoft.lotto649.view.button.TextButton
+                android:layout_width="60dp"
+                android:layout_height="32dp"
+                android:text="mm-dd"
+                android:id="@+id/btn_end_date" />
+
+        </LinearLayout>
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="100dp"
+            android:layout_marginBottom="64dp"
+            android:divider="@null"
+            android:dividerHeight="0dp"
+            android:id="@+id/list_number_history"/>
+
+    </FrameLayout>
+
+</FrameLayout>

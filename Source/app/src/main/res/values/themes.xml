@@ -1,0 +1,16 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.Lotto" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/main_color</item>
+        <item name="colorPrimaryVariant">@color/sub_color</item>
+        <item name="colorOnPrimary">@color/main_black</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/main_color</item>
+        <item name="colorSecondaryVariant">@color/sub_color</item>
+        <item name="colorOnSecondary">@color/main_black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">@color/sub_color</item>
+        <!-- Customize your theme here. -->
+    </style>
+</resources>
