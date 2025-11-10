@@ -147,4 +147,32 @@ public class NumberView extends TextView {
         this.setBackground(drawable);
         this.setTextColor(Color.WHITE);
     }
+
+    public void setRedStyle(int number){
+        if(number == 0){
+            drawable.setColor(Color.GRAY);
+            drawable.setStroke(2, Color.BLACK);
+            this.setBackground(drawable);
+            this.setTextColor(Color.BLACK);
+            return;
+        }
+        drawable.setColor(Color.RED);
+        drawable.setStroke(2, Color.RED);
+        this.setBackground(drawable);
+        this.setTextColor(Color.WHITE);
+    }
+
+    public void setRedTextStyle(int number){
+        if(number == 0){
+            drawable.setColor(Color.GRAY);
+            drawable.setStroke(2, Color.BLACK);
+            this.setBackground(drawable);
+            this.setTextColor(Color.BLACK);
+            return;
+        }
+        drawable.setColor(Color.WHITE);
+        drawable.setStroke(2, Color.RED);
+        this.setBackground(drawable);
+        this.setTextColor(Color.RED);
+    }
 }

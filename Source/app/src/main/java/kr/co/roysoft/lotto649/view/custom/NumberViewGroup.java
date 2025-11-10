@@ -183,22 +183,22 @@ public class NumberViewGroup extends LinearLayout {
     public void setNumbersBlue(int num1, int num2, int num3, int num4, int num5, int num6) {
         // NumberDTO용: 6개 번호를 파란색 스타일로 표시, bb는 숨김
         textNumber1.setText(num1 == 0 ? "-" : num1 + "");
-        textNumber1.setLottoBlueStyle(num1);
+        textNumber1.setRedStyle(num1);
 
         textNumber2.setText(num2 == 0 ? "-" : num2 + "");
-        textNumber2.setLottoBlueStyle(num2);
+        textNumber2.setRedStyle(num2);
 
         textNumber3.setText(num3 == 0 ? "-" : num3 + "");
-        textNumber3.setLottoBlueStyle(num3);
+        textNumber3.setRedStyle(num3);
 
         textNumber4.setText(num4 == 0 ? "-" : num4 + "");
-        textNumber4.setLottoBlueStyle(num4);
+        textNumber4.setRedStyle(num4);
 
         textNumber5.setText(num5 == 0 ? "-" : num5 + "");
-        textNumber5.setLottoBlueStyle(num5);
+        textNumber5.setRedStyle(num5);
 
         textNumber6.setText(num6 == 0 ? "-" : num6 + "");
-        textNumber6.setLottoBlueStyle(num6);
+        textNumber6.setRedStyle(num6);
 
         textNumberBB.setText("-");
         textNumberBB.setVisibility(GONE);
@@ -207,25 +207,25 @@ public class NumberViewGroup extends LinearLayout {
     public void setLotto649Numbers(int n1, int n2, int n3, int n4, int n5, int n6, int bb) {
         // Lotto649DTO용: 6개 번호 + 보너스 표시 (n1~n6: 파란색, bb: 초록색)
         textNumber1.setText(n1 == 0 ? "-" : n1 + "");
-        textNumber1.setLottoBlueStyle(n1);
+        textNumber1.setRedStyle(n1);
 
         textNumber2.setText(n2 == 0 ? "-" : n2 + "");
-        textNumber2.setLottoBlueStyle(n2);
+        textNumber2.setRedStyle(n2);
 
         textNumber3.setText(n3 == 0 ? "-" : n3 + "");
-        textNumber3.setLottoBlueStyle(n3);
+        textNumber3.setRedStyle(n3);
 
         textNumber4.setText(n4 == 0 ? "-" : n4 + "");
-        textNumber4.setLottoBlueStyle(n4);
+        textNumber4.setRedStyle(n4);
 
         textNumber5.setText(n5 == 0 ? "-" : n5 + "");
-        textNumber5.setLottoBlueStyle(n5);
+        textNumber5.setRedStyle(n5);
 
         textNumber6.setText(n6 == 0 ? "-" : n6 + "");
-        textNumber6.setLottoBlueStyle(n6);
+        textNumber6.setRedStyle(n6);
 
         textNumberBB.setText(bb == 0 ? "-" : bb + "");
-        textNumberBB.setLottoGreenStyle(bb);
+        textNumberBB.setRedTextStyle(bb);
         textNumberBB.setVisibility(VISIBLE);
     }
 

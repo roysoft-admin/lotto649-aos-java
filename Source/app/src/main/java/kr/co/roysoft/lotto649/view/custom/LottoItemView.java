@@ -85,7 +85,7 @@ public class LottoItemView extends FrameLayout {
         else{
             textWinCount.setText(lotto.winners + "");
         }
-        textWinamnt.setText(lotto.jackpot);
+        textWinamnt.setText(lotto.gold_jackpot + " | " + lotto.gold_number);
 
         numberItem.setLotto649Numbers(lotto.n1, lotto.n2, lotto.n3, lotto.n4, lotto.n5, lotto.n6, lotto.bb);
     }
