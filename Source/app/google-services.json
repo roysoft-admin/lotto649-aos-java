@@ -12,7 +12,28 @@
           "package_name": "kr.co.roysoft.lotto649"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "1011816321357-1ot4pnr0h8fuksc5pvi7sh29u4l38g1n.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "kr.co.roysoft.lotto649",
+            "certificate_hash": "804130cd5858497db4c92df26ee4be16995d044f"
+          }
+        },
+        {
+          "client_id": "1011816321357-k5vufav6p8gjsajkptnaoefs9n4hfhj4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "kr.co.roysoft.lotto649",
+            "certificate_hash": "ef1c6eecaf59cd07b43492a759bc98d142bc372b"
+          }
+        },
+        {
+          "client_id": "1011816321357-i1m6s1bu94ekfaf7pb6snk4g0nlrmif3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
           "current_key": "AIzaSyBHWjQb8-vJ4jjKr151iQN5-xi6WA4S8dQ"
@@ -20,7 +41,12 @@
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": []
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1011816321357-i1m6s1bu94ekfaf7pb6snk4g0nlrmif3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         }
       }
     }

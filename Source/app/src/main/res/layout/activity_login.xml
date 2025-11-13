@@ -49,7 +49,6 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="412dp"
-            android:visibility="gone"
             android:text="With Social Login" />
 
         <LinearLayout
@@ -58,7 +57,6 @@
             android:orientation="horizontal"
             android:layout_gravity="center_horizontal"
             android:gravity="center"
-            android:visibility="gone"
             android:layout_marginTop="452dp">
 
             <kr.co.roysoft.lotto649.view.button.IconButton
