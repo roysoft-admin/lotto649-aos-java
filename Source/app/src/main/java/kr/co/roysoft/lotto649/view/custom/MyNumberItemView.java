@@ -111,7 +111,7 @@ public class MyNumberItemView extends FrameLayout {
         
         chipType.setSelected(number.input_type == Enums.INPUT_TYPE_AUTO);
         if(number.input_type == Enums.INPUT_TYPE_AUTO){
-            chipType.setText("QUICK PICK");
+            chipType.setText("AI PICK");
         }
         else{
             chipType.setText("INPUT");

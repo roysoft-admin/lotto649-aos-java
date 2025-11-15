@@ -5,8 +5,10 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.AbsListView;
 import android.widget.Button;
+import android.widget.CheckBox;
 import android.widget.DatePicker;
 import android.widget.ListView;
+import android.widget.TextView;
 
 import androidx.annotation.Nullable;
 import androidx.core.view.OnApplyWindowInsetsListener;
@@ -26,6 +28,8 @@ import kr.co.roysoft.lotto649.manager.NetworkManager;
 
 public class MyNumberActivity extends BottomBaseAuthActivity {
 
+    private CheckBox checkWin;
+    private TextView textWin;
     private ListView listMy;
     private MyNumberAdapter adapter;
     private Button btnStart;
@@ -33,6 +37,8 @@ public class MyNumberActivity extends BottomBaseAuthActivity {
 
     private String startDate;
     private String endDate;
+
+    private boolean isWin = false;
 
     private ArrayList<NumberDTO> list = new ArrayList<>();
 
@@ -43,6 +49,21 @@ public class MyNumberActivity extends BottomBaseAuthActivity {
         setupBottom();
         setBottomMenu(Enums.MENU_MY);
         initStatus();
+
+        checkWin = findViewById(R.id.check_win);
+        textWin = findViewById(R.id.text_win);
+        checkWin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                clickCheckWin();
+            }
+        });
+        textWin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                clickCheckWin();
+            }
+        });
 
         listMy = findViewById(R.id.list_number_history);
         adapter = new MyNumberAdapter(this);
@@ -171,15 +192,34 @@ public class MyNumberActivity extends BottomBaseAuthActivity {
         }
     }
 
+    private void clickCheckWin(){
+        isWin = !isWin;
+        checkWin.setChecked(isWin);
+        initPage();
+        requestList();
+    }
+
     private void requestList(){
         if(stateManager.USER == null) return;
         hideKeyboard();
-        networkManager.request(this, NetworkManager.REQUEST_GET_NUMBERS, new HashMap<String, String>(){{
-            put("limit", "10");
-            put("offset", offsetList + "");
-            put("user_id", stateManager.USER.id + "");
-            put("started_at", startDate);
-            put("ended_at", endDate);
-        }}, NetworkManager.PARAM_TYPE_NORMAL);
+        if(isWin){
+            networkManager.request(this, NetworkManager.REQUEST_GET_NUMBERS, new HashMap<String, String>(){{
+                put("limit", "10");
+                put("type", "win");
+                put("offset", offsetList + "");
+                put("user_id", stateManager.USER.id + "");
+                put("started_at", startDate);
+                put("ended_at", endDate);
+            }}, NetworkManager.PARAM_TYPE_NORMAL);
+        }
+        else{
+            networkManager.request(this, NetworkManager.REQUEST_GET_NUMBERS, new HashMap<String, String>(){{
+                put("limit", "10");
+                put("offset", offsetList + "");
+                put("user_id", stateManager.USER.id + "");
+                put("started_at", startDate);
+                put("ended_at", endDate);
+            }}, NetworkManager.PARAM_TYPE_NORMAL);
+        }
     }
 }

@@ -27,7 +27,7 @@
             <kr.co.roysoft.lotto649.view.text.LargeTextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="QUICK PICK" />
+                android:text="AI PICK" />
 
             <View
                 android:layout_width="0dp"
@@ -103,7 +103,7 @@
             android:layout_height="56dp"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="262dp"
-            android:text="QUICK PICK"
+            android:text="AI PICK"
             android:id="@+id/btn_ai" />
 
         <LinearLayout

@@ -10,5 +10,5 @@ public class Enums {
     public static final int MENU_HISTORY = 3;
     public static final int MENU_SETTING = 4;
 
-    public static final String[] MENUS = {"HOME", "MY NUMBERS", "QUICK PICK", "DRAW HISTORY", "MY PAGE"};
+    public static final String[] MENUS = {"HOME", "MY NUMBERS", "AI PICK", "DRAW HISTORY", "MY PAGE"};
 }

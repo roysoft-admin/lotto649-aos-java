@@ -86,7 +86,7 @@
                 android:layout_height="wrap_content"
                 android:gravity="center_horizontal"
                 android:layout_marginTop="38dp"
-                android:text="QUICK PICK"
+                android:text="AI PICK"
                 android:textSize="11dp"
                 android:textColor="@color/sub_color"
                 android:id="@+id/text_input" />
